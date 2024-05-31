@@ -15,5 +15,8 @@ module.exports = {
   rules: {
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
+    // 在 package.json 中 "eslintConfig" 的 rules 中增加一行代码, 即可关闭
+    "prettier/prettier": "off"
+    // 重启后生效
   },
 };
